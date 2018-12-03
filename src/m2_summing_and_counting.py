@@ -234,7 +234,7 @@ def run_test_count_sines_vs_cosines():
     print('       actual:  ', answer)
 
     # -------------------------------------------------------------------------
-    # TODO: 6 (continued).
+    # DONE: 6 (continued).
     # Below this comment, add 5 more test cases of your own choosing.
     # -------------------------------------------------------------------------
     # Test 2:
@@ -256,14 +256,14 @@ def run_test_count_sines_vs_cosines():
     print('       actual:  ', answer)
 
     # Test 5:
-    expected = 100
-    answer = count_sines_vs_cosines(101)
+    expected = 20
+    answer = count_sines_vs_cosines(20)
     print('Test 5 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 6:
-    expected = 100
-    answer = count_sines_vs_cosines(101)
+    expected = 12
+    answer = count_sines_vs_cosines(11)
     print('Test 6 expected:', expected)
     print('       actual:  ', answer)
 
@@ -295,7 +295,7 @@ def count_sines_vs_cosines(m):
       -- Also:  count_sines_vs_cosines(101) returns 100 (trust me!)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPORTANT: As in previous problems in this session,
@@ -303,7 +303,7 @@ def count_sines_vs_cosines(m):
     #   of the RANGE expression, if you happen to know them.
     # -------------------------------------------------------------------------
     count = 0
-    for k in range(m + (-m)):
+    for k in range(m - (-m) + 1):
         a = math.sin((-m) + k)
         b = math.cos((-m) + k)
         if a > b:
