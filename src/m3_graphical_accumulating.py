@@ -190,7 +190,7 @@ def draw_lines(n, point, window):
     currentY = y + 100
     for _ in range(n):
         rg.Line(rg.Point(x, y), rg.Point(x + 100, currentY)).attach_to(window)
-        currentY-=a
+        currentY -= a
 
     window.render()
 
